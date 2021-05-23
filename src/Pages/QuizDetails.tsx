@@ -9,7 +9,5 @@ export const QuizDetails = () => {
   const quizCategory: MentalHealthQuiz | undefined = mentalHealthQuizzes.find(
     (quizCategory: MentalHealthQuiz) => quizCategory.id === quizId
   );
-
-  console.log(quizCategory);
   return <QuizIntroduction quizCategory={quizCategory} />;
 };

@@ -16,7 +16,7 @@ export const DisplayQuestion = () => {
   const { dispatch: quizDispatch } = useQuiz();
   useEffect(() => {
     quizDispatch({ type: "SET_CURRENT_QUIZ", payload: quizQuestions });
-  });
+  }, []);
 
   const currentQuizQuestion: QuizQuestion | undefined = quizQuestions
     ? quizQuestions[currentQuestionNumber]
