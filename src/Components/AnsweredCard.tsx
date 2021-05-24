@@ -30,6 +30,7 @@ export const AnsweredCard = ({ currentQuizQuestion }: AnsweredCardProps) => {
           {currentQuizQuestion.options.map((option) => {
             return (
               <Button
+                key={option.optionId}
                 className="option"
                 colorScheme={option.isSelected ? "blue" : null}
               >

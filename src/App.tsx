@@ -1,6 +1,6 @@
 import "./styles.css";
 import {
-  GettingStarted,
+  // GettingStarted,
   QuizListingPage,
   QuizDetails,
   DisplayQuestion,

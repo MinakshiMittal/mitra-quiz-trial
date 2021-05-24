@@ -1,6 +1,4 @@
 import { Box, Image, Flex } from "@chakra-ui/react";
-import "../global.d.ts";
-import Happy from "../assets/happy.jpg";
 import { useNavigate } from "react-router-dom";
 import { mentalHealthQuizzes } from "../quiz-data";
 import { MentalHealthQuiz } from "../quiz-data.types";
@@ -12,6 +10,7 @@ export const QuizCategoryCard = () => {
       {mentalHealthQuizzes.map((quizCategory: MentalHealthQuiz) => {
         return (
           <Box
+            key={quizCategory.id}
             onClick={() => navigate(`/quiz/${quizCategory.id}/introduction`)}
             maxW="sm"
             borderWidth="1px"

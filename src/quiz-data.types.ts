@@ -1,10 +1,12 @@
 export type Option = {
+  optionId: string;
   text: string;
   isSelected: boolean;
   points: number;
 };
 
 export type QuizQuestion = {
+  questionId: string;
   question: string;
   options: Option[];
 };
@@ -12,7 +14,7 @@ export type QuizQuestion = {
 export type MentalHealthQuiz = {
   id: string;
   quizName: string;
-  quizCoverImage:string;
+  quizCoverImage: string;
   questions: QuizQuestion[];
 };
 

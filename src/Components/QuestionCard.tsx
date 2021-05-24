@@ -40,6 +40,7 @@ export const QuestionCard = ({
           {currentQuizQuestion.options.map((option) => {
             return (
               <Button
+                key={option.optionId}
                 className="option"
                 onClick={() => {
                   if (currentQuestionNumber < 3) {
@@ -58,7 +59,6 @@ export const QuestionCard = ({
                       option: option
                     }
                   });
-                  console.log(quizQuestions);
                 }}
               >
                 {option.text}

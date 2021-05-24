@@ -46,12 +46,10 @@ export const quizReducer = (state: InitialQuizState, action: QuizAction) => {
       return {
         ...state,
         currentQuiz: state.currentQuiz?.map((question: QuizQuestion) => {
-          console.log(question);
           if (question.question === action.payload.quizQuestion.question) {
             question.options.map((option: Option) => {
               if (option.text === action.payload.option.text) {
                 option.isSelected = true;
-                console.log(option);
               }
               return option;
             });

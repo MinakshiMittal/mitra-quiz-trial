@@ -17,7 +17,12 @@ export const AnalysisPage = () => {
         Total Score: {totalScore}{" "}
       </Text>
       {currentQuiz?.map((question: QuizQuestion) => {
-        return <AnsweredCard currentQuizQuestion={question} />;
+        return (
+          <AnsweredCard
+            key={question.questionId}
+            currentQuizQuestion={question}
+          />
+        );
       })}
       <Button
         colorScheme="red"
