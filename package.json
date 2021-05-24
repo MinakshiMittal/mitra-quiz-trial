@@ -2,17 +2,12 @@
   "name": "react-typescript",
   "version": "1.0.0",
   "description": "React and TypeScript example starter project",
-  "keywords": [
-    "typescript",
-    "react",
-    "starter"
-  ],
+  "keywords": ["typescript", "react", "starter"],
   "main": "src/index.tsx",
   "dependencies": {
     "@chakra-ui/react": "1.6.2",
     "@emotion/react": "11.4.0",
     "@emotion/styled": "11.3.0",
-    "ci": "2.1.1",
     "framer-motion": "4.1.17",
     "history": "5.0.0",
     "react": "17.0.2",
@@ -28,14 +23,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
 }
